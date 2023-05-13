@@ -8,6 +8,7 @@ public class Corolla extends BToyota{
     boolean cruiseControl=true; // hiz kontrol
 
     public void hiz(){
+
         System.out.println("Corolla araclar max 240 hiz yapar");
     }
     public void guvenlik(){
@@ -15,7 +16,7 @@ public class Corolla extends BToyota{
     }
 
     public static void main(String[] args) {
-    Corolla corolla1=new Corolla();
+     Corolla corolla1=new Corolla();
         System.out.println(corolla1.uretimYeri); // C Turkiye (C=Corolla classtan bilgi getirecek: Turkiye)
         System.out.println(corolla1.lastik); // C pirelli 205..
         System.out.println(corolla1.model); // C Corolla

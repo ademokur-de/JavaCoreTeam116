@@ -5,8 +5,8 @@ public class Araba {
     String model="Araba modeli belirtilmedi";
     int tekerSayisi=4;
 
-
     public void hiz(){
+
         System.out.println("Arabalar motor ve yakita göre maximum hiz belirler");
     }
     public void guvenlik(){
