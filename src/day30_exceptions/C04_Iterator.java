@@ -43,14 +43,22 @@ public class C04_Iterator {
         }
         System.out.println(sayilar); // [7, 14, 5, 11]
         Iterator itr = sayilar.iterator();
-        itr.next();
-        itr.remove();
-        itr.next();
-        itr.remove();
-        itr.next();
-        itr.remove();
-        itr.next();
-        itr.remove();
+//        itr.next();
+//        itr.remove();
+
+//        itr.next();
+//        itr.remove();
+
+//        itr.next();
+//        itr.remove();
+
+//        itr.next();
+//        itr.remove();
+
+        while (itr.hasNext()){
+            itr.next();
+            itr.remove();
+        }
         System.out.println(sayilar); // []
 
     }
