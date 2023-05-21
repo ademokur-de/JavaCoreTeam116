@@ -68,7 +68,23 @@ public class MapMethodlar {
             siraNo++;
         }
     }
+    public static void istenenSoyisimdekiOgrencileriYazdir(Map<Integer, String> ogrenciMap, String soyisim) {
+        // verilen soyisme sahip tum ogrencileri yazdirin
+        Collection<String> valueCollection= ogrenciMap.values();
+        int siraNo=1;
+        for (String eachValue:valueCollection
+             ) {
 
+            String[] eachValueArr=eachValue.split("-");
+            if (eachValueArr[1].equals(soyisim)){
+                System.out.println(siraNo +"- "+ eachValueArr[0]+" "+eachValueArr[1] +" " + eachValueArr[2]+
+                        eachValueArr[3] +" " + eachValueArr[4]);
+                siraNo++;
+            }
+
+        }
+
+    }
     public static void istenenSiniftakiOgrencileriYazdir(Map<Integer, String> ogrenciMap, int sinif) {
 
         // istenen siniftaki tum ogrencilerin isim ve soyismlerini yazdirin
@@ -93,7 +109,8 @@ public class MapMethodlar {
 
             if (eachValueArr[2].equals(sinif+"")) {
 
-                System.out.println(siraNo +"- "+ eachValueArr[0]+" "+eachValueArr[1] +" " + eachValueArr[2]);
+                System.out.println(siraNo +"- "+ eachValueArr[0]+" "+
+                                    eachValueArr[1] +" " + eachValueArr[2]);
                 siraNo++;
             }
 
@@ -127,15 +144,8 @@ public class MapMethodlar {
                         valueArr[4]);
 
                 siraNo++;
-
             }
-
-
-
         }
-
-
-
     }
 
     public static Map<Integer, String> numaraIleSoyisimUpdateEt(Map<Integer, String> ogrenciMap, int ogrNo, String yeniSoyisim) {
@@ -162,5 +172,42 @@ public class MapMethodlar {
 
 
         return ogrenciMap;
+    }
+
+
+    public static void istenenSubedekiOgrencileriYazdir(Map<Integer, String> ogrenciMap, String sube) {
+        // verilen subedeki tum ogrencileri yazdirin
+        Collection<String> valueCollection= ogrenciMap.values();
+        int siraNo=1;
+        for (String eachValue:valueCollection
+        ) {
+
+            String[] eachValueArr=eachValue.split("-");
+            if (eachValueArr[3].equals(sube)){
+                System.out.println(siraNo +"- "+ eachValueArr[0]+" "+eachValueArr[1] +" " + eachValueArr[2]+
+                        eachValueArr[3] +" " + eachValueArr[4]);
+                siraNo++;
+            }
+
+        }
+
+    }
+
+    public static void istenenSinifVeSubedekiOgrencileriYazdir(Map<Integer, String> ogrenciMap, int sinif, String sube) {
+
+        Collection<String> valueCollection= ogrenciMap.values();
+        int siraNo=1;
+        for (String eachValue:valueCollection
+        ) {
+
+            String[] eachValueArr=eachValue.split("-");
+            if (eachValueArr[2].equals(sinif+"") && eachValueArr[3].equals(sube)) {
+                System.out.println(siraNo +"- "+ eachValueArr[0]+" "+eachValueArr[1] +" " + eachValueArr[2]+
+                        eachValueArr[3] +" " + eachValueArr[4]);
+                siraNo++;
+            }
+
+        }
+
     }
 }

@@ -38,8 +38,13 @@ public class C04_Values {
         MapMethodlar.istenenSiniftakiOgrencileriYazdir(ogrenciMap,10);
 
         // verilen soyisme sahip tum ogrencileri yazdirin
+        MapMethodlar.istenenSoyisimdekiOgrencileriYazdir(ogrenciMap, "Cem");
+
         // verilen sube'deki tum ogrencileri yazdirin
+        MapMethodlar.istenenSubedekiOgrencileriYazdir(ogrenciMap, "K");
+
         // verilen sinif ve sube'deki tum ogrencileri yazdirin
+        MapMethodlar.istenenSinifVeSubedekiOgrencileriYazdir(ogrenciMap, 10, "K");
 
     }
 }
