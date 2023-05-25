@@ -1,4 +1,4 @@
-package day32_maps;
+package day32_Maps;
 
 import java.util.Map;
 
