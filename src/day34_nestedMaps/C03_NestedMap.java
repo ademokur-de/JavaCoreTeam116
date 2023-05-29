@@ -70,6 +70,5 @@ public class C03_NestedMap {
 
         System.out.println(((Map) rezervasyonMap.get("bookingdates")).get("checkin")); //2023-07-21
 
-
     }
 }
