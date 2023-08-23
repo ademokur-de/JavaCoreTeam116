@@ -268,7 +268,7 @@ public class MapMethodlar {
                     sinif++;
                     eachValueArr[2] = ""+ sinif;
                 }else {
-                    eachValueArr[2] ="Mezun";
+                    eachValueArr[2] ="Mezun";   
                 }
                 // [Ali, Can, 12, H, MF]
             }
